@@ -1,3 +1,7 @@
+# ls
+alias ll='ls -lahG'
+
+# git
 alias ga='git add'
 alias gac='git add . && git commit'
 alias gc='git commit'
