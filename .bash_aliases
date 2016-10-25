@@ -19,3 +19,8 @@ alias gs='git status'
 alias gsh='git show'
 alias gsp='git stash pop'
 alias gst='git stash'
+
+# editing
+alias e='edit'
+alias edit='subl -w'
+alias s='subl'
