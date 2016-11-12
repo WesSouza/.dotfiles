@@ -4,6 +4,7 @@ alias ll='ls -lahG'
 # git
 alias ga='git add'
 alias gac='git add . && git commit'
+alias gb='git branch'
 alias gbd='git branch -D'
 alias gc='git commit'
 alias gcb='git checkout master && git checkout -B'
