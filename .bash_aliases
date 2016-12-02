@@ -32,3 +32,6 @@ alias gst='git stash'
 alias e='edit'
 alias edit='subl -w'
 alias s='subl'
+
+# npm
+alias run='npm run'
