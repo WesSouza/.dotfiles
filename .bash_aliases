@@ -35,3 +35,6 @@ alias s='subl'
 
 # npm
 alias run='npm run'
+
+# other
+alias spoofmac="sudo ifconfig en0 ether `openssl rand -hex 6 | sed 's/\(..\)/\1:/g; s/.$//'`"
