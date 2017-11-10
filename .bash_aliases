@@ -33,8 +33,9 @@ alias e='edit'
 alias edit='subl -w'
 alias s='subl'
 
-# npm
+# npm/yarn
 alias run='npm run'
+alias yarn='yarn --ignore-engines'
 
 # other
 alias spoofmac="sudo ifconfig en0 ether `openssl rand -hex 6 | sed 's/\(..\)/\1:/g; s/.$//'`"
