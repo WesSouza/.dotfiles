@@ -16,4 +16,8 @@ function __bc(){
     printf $'\[\e[48;07;%dm\]' $1
 }
 
+function emulator {
+  cd "$(dirname "$(which emulator)")" && ./emulator "$@";
+}
+
 export PS1="\n$(__c 247)\t \[\e[1;32m\]\u\[\e[0m\]$(__c 247) at \[\e[1;34m\]\h\[\e[m\]$(__c 247) cwd \[\e[33m\]\w$(__c 0)\n\[\e[0m\]$ "
