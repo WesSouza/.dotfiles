@@ -16,6 +16,7 @@ alias gf='git fetch'
 alias gg='git grep'
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gp='git pull --rebase'
+alias gpb="git checkout \`git for-each-ref --sort='-authordate:iso8601' --format=' %(authordate:relative)%09%(refname:short)' refs/heads | pick | cut -f2\`"
 alias gpf='git push -f'
 alias gpp='git pull --rebase && git push'
 alias gpu='git push -u origin `git rev-parse --abbrev-ref HEAD`'
