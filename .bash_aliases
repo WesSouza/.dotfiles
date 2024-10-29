@@ -12,6 +12,7 @@ alias gch='git checkout'
 alias gcl='git clean -df'
 alias gd='git diff'
 alias gf='git fetch'
+alias gfu='git config core.hooksPath /dev/null'
 alias gg='git grep'
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gp='git pull --rebase'
@@ -35,6 +36,9 @@ alias edit='code -w'
 
 # npm/yarn
 alias run='yarn run'
-
-# other
-alias spoofmac="sudo ifconfig en0 ether `openssl rand -hex 6 | sed 's/\(..\)/\1:/g; s/.$//'`"
+alias yb='yarn run build'
+alias yd='yarn run dev'
+alias yi='yarn install; git config core.hooksPath /dev/null'
+alias yj='yarn run jest'
+alias ys='yarn start'
+alias yt='yarn run test'
