@@ -29,6 +29,8 @@ alias gs='git status'
 alias gsh='git show'
 alias gsp='git stash pop'
 alias gst='git stash'
+alias guh='main_ref=$(git symbolic-ref refs/remotes/origin/HEAD); main_branch=${main_ref#refs/remotes/origin/}; git push . origin/${main_branch}:${main_branch}'
+alias gur='guh && git rebase ${main_branch}'
 
 # editing
 alias e='edit'
